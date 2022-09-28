@@ -1,6 +1,6 @@
 <template>
   <div class="app-header">
-    <div class="app-header__container">
+    <div class="app-header__container container">
       <div class="name">Igor Bitarães</div>
       <nav class="menu">
         <ul class="list">
@@ -38,8 +38,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
   color: white;
 }
 
@@ -72,14 +70,5 @@ export default {
   bottom: 0;
   left: 0;
   animation: slide 0.7s forwards;
-}
-
-@keyframes slide {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
 }
 </style>
