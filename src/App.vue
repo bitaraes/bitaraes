@@ -1,6 +1,9 @@
 <template>
   <div>
     <AppHeader />
+    <div class="container">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 <script>
@@ -13,4 +16,5 @@ export default {
 
 <style>
 @import url("./layout/base.css");
+@import url("./layout/animations.css");
 </style>
