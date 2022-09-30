@@ -64,7 +64,7 @@ export default {
         if (index >= arr.length) {
           clearInterval(interval);
         }
-      }, 100);
+      }, 70);
     },
   },
 };
@@ -130,21 +130,18 @@ export default {
   height: 5px;
   bottom: 0;
 }
-
 .external-menu__list .linkedin-item:hover::before {
   background: #0e76a8;
   height: 30px;
   opacity: 0.5;
   transition: all 0.5s ease-in;
 }
-
 .external-menu__list .github-item:hover::before {
   background: #000;
   height: 30px;
   opacity: 0.5;
   transition: all 0.5s ease-in;
 }
-
 .external-menu__list .github-item::before {
   background: #000;
   transition: all 0.5s ease-out;
@@ -155,5 +152,29 @@ export default {
 }
 .home-img {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+  .home-description__container {
+    width: 100%;
+    min-height: 180px;
+    text-align: center;
+    padding: 0;
+  }
+  .home-img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .home-description__container {
+    min-height: 200px;
+  }
+}
+@media screen and (max-width: 378px) {
+  .home-description__container {
+    min-height: 300px;
+  }
 }
 </style>
