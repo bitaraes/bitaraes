@@ -101,19 +101,20 @@ export default {
   animation: piscar 0.7s infinite;
 }
 .external-menu {
-  border-radius: 10px;
-  background: #ddd;
   margin: 0 auto;
   width: 50%;
-  height: 30px;
+  height: 7em;
   display: flex;
   align-items: end;
   overflow: hidden;
+  border-radius: 10px;
 }
 .external-menu__list {
   width: 100%;
-  height: 100%;
+  height: 30px;
   display: flex;
+  background: #ddd;
+  border-radius: 10px;
 }
 .external-menu__list a {
   display: flex;

@@ -1,6 +1,6 @@
 <template>
   <div class="app-header">
-    <div class="app-header__container container">
+    <div class="app-header__container">
       <div class="name">Igor Bitarães</div>
       <nav class="menu">
         <ul class="list">
@@ -39,6 +39,8 @@ export default {
   align-items: center;
   justify-content: space-between;
   color: white;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .app-header .list {
