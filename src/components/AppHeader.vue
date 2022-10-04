@@ -10,6 +10,13 @@
         </ul>
       </nav>
     </div>
+    <div class="m-menu">
+      <button class="open-menu">
+        <span class="top"></span>
+        <span class="mid"></span>
+        <span class="bottom"></span>
+      </button>
+    </div>
   </div>
 </template>
 <script>
@@ -72,5 +79,44 @@ export default {
   bottom: 0;
   left: 0;
   animation: slide 0.7s forwards;
+}
+.open-menu {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .app-header__container .menu {
+    display: none;
+  }
+  .open-menu {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: grey;
+    border: none;
+    position: relative;
+    z-index: 100;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .open-menu > span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    background: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.4s ease;
+  }
+  .open-menu > span.top {
+    transform: translateY(-8px);
+  }
+  .open-menu > span.bottom {
+    transform: translateY(8px);
+  }
 }
 </style>
