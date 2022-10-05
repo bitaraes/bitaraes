@@ -39,7 +39,6 @@ export default {
   data() {
     return {
       menu: [
-        { name: "Sobre mim", link: "/sobre" },
         { name: "Skills", link: "/skills" },
         { name: "Projetos", link: "/projetos" },
         { name: "Contato", link: "/contato" },
