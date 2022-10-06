@@ -15,3 +15,12 @@
         opacity: 0;
     }
 }
+@keyframes mailSlide {
+  0% {
+    left: 20%;
+  }
+  100% {
+    left: 60%;
+  }
+  
+}
