@@ -17,10 +17,10 @@
 }
 @keyframes mailSlide {
   0% {
-    left: 20%;
+    left: 0%;
   }
   100% {
-    left: 60%;
+    left: 70%;
   }
   
 }
