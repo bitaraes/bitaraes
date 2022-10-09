@@ -17,10 +17,20 @@
 }
 @keyframes mailSlide {
   0% {
-    left: 20%;
+    left: 0%;
   }
   100% {
-    left: 60%;
+    left: 70%;
   }
   
+}
+@keyframes pageSlide {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }

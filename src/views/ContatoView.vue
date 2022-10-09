@@ -57,18 +57,21 @@ export default {
 }
 .contato-item {
   font-size: 2.25rem;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  text-align: center;
 }
 .contato-mail {
-  width: 70%;
+  width: 180px;
   height: 100px;
   padding-block: 15px;
   position: relative;
 }
 .contato-mail-img {
   position: absolute;
-  margin-left: 50px;
-  left: 40;
-  animation: mailSlide 3s infinite linear alternate;
+  margin-left: 0px;
+  left: 0;
+  animation: mailSlide 1.5s infinite linear alternate;
 }
 .contato-icons {
   display: flex;
@@ -101,5 +104,11 @@ export default {
   background: #f7b36a;
   background: linear-gradient(to bottom, #f7b36a, #b4824c);
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .contato-card {
+    height: 90%;
+  }
 }
 </style>
