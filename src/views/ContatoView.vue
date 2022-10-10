@@ -42,7 +42,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 250px);
+  height: 80vh;
 }
 .contato-card {
   width: 100%;
@@ -109,6 +109,22 @@ export default {
 @media screen and (max-width: 768px) {
   .contato-card {
     height: 90%;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .contato-mail {
+    display: none;
+  }
+  .contato-item {
+    font-size: 26px;
+  }
+  .contato-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .fa-3x {
+    font-size: 1.5rem;
   }
 }
 </style>
