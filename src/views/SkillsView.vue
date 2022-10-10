@@ -9,7 +9,7 @@ export default { components: { SkillsCard } };
 </script>
 <style scoped>
 .skill-view {
-  height: calc(100vh - 120px);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

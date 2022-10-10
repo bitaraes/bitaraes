@@ -4,7 +4,11 @@
       <router-link to="/" class="app-header__name"> Igor Bitarães </router-link>
       <nav class="menu">
         <ul class="list">
-          <li v-for="(item, index) in menu" :key="index" class="list-item">
+          <li
+            v-for="(item, index) in filteredMenu"
+            :key="index"
+            class="list-item"
+          >
             <router-link :to="item.link">{{ item.name }}</router-link>
           </li>
         </ul>
@@ -21,7 +25,7 @@
           <div class="m-menu__wrapper">
             <ul class="m-menu__list">
               <li
-                v-for="(item, index) in menu"
+                v-for="(item, index) in filteredMenu"
                 :key="index"
                 class="m-menu__item"
               >
@@ -52,6 +56,11 @@ export default {
   },
   destroyed() {
     this.events.forEach((e) => window.removeEventListener(e, this.toggle));
+  },
+  computed: {
+    filteredMenu() {
+      return this.menu.filter((item) => item.name != "Projetos");
+    },
   },
   methods: {
     toggle() {
