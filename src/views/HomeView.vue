@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       description:
-        "Sou estudante de Sistemas de informação, Desenvolvedor Front-End e apaixonado por programação. ",
+        "Sou desenvolvedor Front-End e apaixonado por programação. ",
       newDescription: "",
       developerImg: require("@/assets/images/Developer.svg"),
       iconsMenu: [
